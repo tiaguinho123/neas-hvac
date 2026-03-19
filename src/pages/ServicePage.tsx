@@ -1,4 +1,5 @@
 // Shared layout component used by all service pages
+import React from 'react';
 import { motion } from 'motion/react';
 import { Phone, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -57,18 +58,18 @@ export default function ServicePage({ title, subtitle, heroImage, heroImageAlt, 
                 <p className="font-bold text-xl mb-3">Request a Free Estimate</p>
                 <p className="text-white/85 text-sm mb-5">No obligation. Licensed technicians. Honest pricing.</p>
                 <Link to="/contact-us"
-                  className="block w-full py-3 bg-white font-bold rounded-lg text-base transition-colors hover:bg-slate-100 mb-3"
+                  className="flex items-center justify-center gap-2 w-full py-3 bg-white font-bold rounded-lg text-base transition-colors hover:bg-slate-100 mb-3"
                   style={{ color: '#CE1126' }}
                 >
-                  <Calendar className="w-4 h-4 inline mr-1" aria-hidden="true" />
+                  <Calendar className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
                   Schedule Online
                 </Link>
                 <a href={`tel:${phone}`}
-                  className="block w-full py-3 border-2 border-white text-white font-bold rounded-lg text-base hover:bg-white transition-colors"
+                  className="flex items-center justify-center gap-2 w-full py-3 border-2 border-white text-white font-bold rounded-lg text-base hover:bg-white transition-colors"
                   onMouseOver={(e) => { (e.currentTarget as HTMLElement).style.color = '#CE1126'; }}
                   onMouseOut={(e) => { (e.currentTarget as HTMLElement).style.color = 'white'; }}
                 >
-                  <Phone className="w-4 h-4 inline mr-1" aria-hidden="true" />
+                  <Phone className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
                   {phoneFormatted}
                 </a>
               </div>

@@ -18,7 +18,7 @@ export default function Footer() {
               <img
                 src="https://neas-hvac.com/wp-content/uploads/2018/11/NEAS-LOGO.png"
                 alt="New England Air Systems LLC"
-                className="h-16 object-contain brightness-0 invert"
+                className="h-16 object-contain"
                 loading="lazy"
                 decoding="async"
               />

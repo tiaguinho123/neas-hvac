@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import FinancingStrip from './components/FinancingStrip';
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -30,6 +31,7 @@ export default function App() {
       </a>
 
       <Navbar />
+      <FinancingStrip />
 
       <main id="main-content">
         <Routes>

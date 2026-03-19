@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Phone, Calendar, Star, AlertCircle } from 'lucide-react';
+import { Phone, Calendar, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useSiteConfig } from '../config/SiteConfigContext';
 import TrustBadges from '../components/TrustBadges';
@@ -42,26 +42,8 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* ─── Financing Announcement Strip ──────────────────── */}
-      {/* Between Navbar (h-20=80px) and Hero */}
-      <div
-        className="fixed top-20 left-0 right-0 z-40 flex items-center justify-center gap-3 px-4 py-2.5 text-white text-sm font-semibold"
-        style={{ backgroundColor: '#003DA5' }}
-        role="banner"
-        aria-label="Financing announcement"
-      >
-        <AlertCircle className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-        <span>
-          Financing Available Through{' '}
-          <strong className="underline-offset-2 underline decoration-white/60">
-            Synchrony Financial
-          </strong>{' '}
-          — Ask Us Today!
-        </span>
-      </div>
-
       {/* ─── Hero ──────────────────────────────────────────── */}
-      {/* pt-20 (navbar) + ~40px (financing strip) = pt-28 */}
+      {/* pt-28 = navbar (80px) + financing strip (~40px) */}
       <section className="relative pt-28" aria-label="Hero">
         <div className="relative overflow-hidden" style={{ height: '540px' }}>
           {/* Real NEAS building & vans photo */}
