@@ -84,18 +84,18 @@ export default function FinancingPage() {
                 <p className="text-slate-600 mb-6">Ready to upgrade your HVAC system? Talk to us about financing options — no pressure, no obligation.</p>
                 <Link
                   to="/contact-us"
-                  className="block w-full py-4 text-white font-bold rounded-xl text-lg transition-colors mb-3"
+                  className="flex items-center justify-center gap-2 w-full py-4 text-white font-bold rounded-xl text-lg transition-colors mb-3"
                   style={{ backgroundColor: '#CE1126' }}
                 >
-                  <Calendar className="w-5 h-5 inline mr-2" aria-hidden="true" />
+                  <Calendar className="w-5 h-5 flex-shrink-0" aria-hidden="true" />
                   Ask About Financing
                 </Link>
                 <a
                   href={`tel:${phone}`}
-                  className="block w-full py-4 border-2 font-bold rounded-xl text-lg transition-colors"
+                  className="flex items-center justify-center gap-2 w-full py-4 border-2 font-bold rounded-xl text-lg transition-colors"
                   style={{ borderColor: '#003DA5', color: '#003DA5' }}
                 >
-                  <Phone className="w-5 h-5 inline mr-2" aria-hidden="true" />
+                  <Phone className="w-5 h-5 flex-shrink-0" aria-hidden="true" />
                   Call {phoneFormatted}
                 </a>
               </div>
